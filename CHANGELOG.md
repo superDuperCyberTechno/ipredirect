@@ -1,5 +1,5 @@
-# v0.1.0
-##  12/07/2017
+# v1.0.1
+## 2017-12-21
 
 1. [](#new)
-    * ChangeLog started...
+    * First official, functional version.
