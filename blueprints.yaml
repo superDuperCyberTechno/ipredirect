@@ -1,0 +1,45 @@
+name: IPRedirect
+version: 1.0.1
+description: Redirects the client to a subdomain based on the IP-based country code.
+icon: exchange
+author:
+  name: superDuperCyberTechno
+  email: superDuperCyberTechno@users.noreply.github.com 
+homepage: 
+# demo: http://demo.yoursite.com
+keywords: grav, plugin, ip, redirect, geolocation, geo
+bugs: 
+docs: 
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    test_country_code:
+      type: string
+      label: Test country code
+      help: You can spoof you own country code by supplying this value. The plugin will assume that this is your country code. Remove when testing is done.
+      autocomplete: off
+    redirecter_path: 
+      type: string
+      label: Redirecter path
+      help: Redirection is triggered when this absolute path is visited. If no proper redirection is found, the path is simply loaded instead.
+      default: /
+      autocomplete: off
+    redirects:
+      type: array
+      label: Redirects (lower case only)
+      help: First value represents the country code representing the client, the second value represents the resulting redirect path the client is sent to if their country code matches the first value.
+      placeholder_key: Expected country code (lower case)
+      placeholder_value: Redirect to
+      autocomplete: off
