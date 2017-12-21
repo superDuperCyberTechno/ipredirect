@@ -5,11 +5,9 @@ icon: exchange
 author:
   name: superDuperCyberTechno
   email: superDuperCyberTechno@users.noreply.github.com 
-homepage: 
-# demo: http://demo.yoursite.com
+homepage: https://github.com/getgrav/grav-plugin-form
+bugs: https://github.com/superDuperCyberTechno/ipredirect/issues
 keywords: grav, plugin, ip, redirect, geolocation, geo
-bugs: 
-docs: 
 license: MIT
 
 form:
